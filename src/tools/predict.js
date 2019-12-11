@@ -26,7 +26,7 @@ export async function preprocess(tweets) {
 async function loadDict() {
   try {
     let response = await fetch(
-      "https://sentimap-nodejs-api.herokuapp.com//word_dict.json"
+      "https://sentimap-nodejs-api.herokuapp.com/word_dict.json"
     );
     // only proceed once promise is resolved
     let data = await response.json();
