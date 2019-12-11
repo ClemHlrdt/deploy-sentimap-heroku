@@ -1,7 +1,7 @@
 const API_URL =
   window.location.hostname === "localhost"
     ? "http://localhost:5000/api/tweets"
-    : "https://sentimap-nodejs-api.herokuapp.com";
+    : "https://sentimap-nodejs-api.herokuapp.com/api/tweets";
 
 console.log(API_URL);
 export function getLocation() {
