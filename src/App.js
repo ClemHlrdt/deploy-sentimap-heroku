@@ -32,7 +32,7 @@ class App extends Component {
   // Load model from API
   async componentDidMount() {
     this.model = await tf.loadLayersModel(
-      "https://https://sentimap-nodejs-api.herokuapp.com/model.json"
+      "https://sentimap-nodejs-api.herokuapp.com/model.json"
     );
     this.setState({ loading: false });
   }
