@@ -32,7 +32,7 @@ export function getLocation() {
 
 export function getTweets(data) {
   //let data = { topic, count, latitude, longitude, radius };
-  // console.log(data);
+  console.log(API_URL, data);
   return fetch(API_URL, {
     method: "POST",
     //mode: 'cors',
