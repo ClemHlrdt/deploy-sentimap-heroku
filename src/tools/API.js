@@ -3,7 +3,6 @@ const API_URL =
     ? "http://localhost:5000/api/tweets"
     : "https://sentimap-nodejs-api.herokuapp.com/api/tweets";
 
-console.log(API_URL);
 export function getLocation() {
   return new Promise(resolve => {
     navigator.geolocation.getCurrentPosition(
@@ -35,7 +34,6 @@ export function getTweets(data) {
   console.log(API_URL, data);
   return fetch(API_URL, {
     method: "POST",
-    //mode: 'cors',
     headers: {
       "Content-Type": "application/json"
     },
